@@ -6,7 +6,7 @@ interface SearchBarProps {
   onSubmit: (searchTerm: string) => void;
 }
 
-export default function SearchBar({ onSubmit }: SearchBarProps): JSX.Element {
+export default function SearchBar({ onSubmit }: SearchBarProps) {
   const [searchTerm, setSearchTerm] = useState<string>('');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
